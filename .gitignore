@@ -1,0 +1,5 @@
+.env
+downloads
+config
+node_modules
+yarn.lock
