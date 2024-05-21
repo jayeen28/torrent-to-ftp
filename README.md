@@ -9,7 +9,7 @@ This project provides an automated setup for running a qBittorrent client within
 1. Run `yarn start` or `node index.js` to start the telegram bot. Use `pm2` if you want to run it in the background.
 
 # Setting up ftp server
-I have created volume with the `/ftp` directory with the docker container. So all the downloaded files gonna be there. You have to create ftp server for that directory. I am using `vsftpd` to setup the ftp server in my linux machine. You can find all the steps in this blog post https://www.geeksforgeeks.org/how-to-setup-and-configure-an-ftp-server-in-linux-2 . Explore google if you have different operating system.
+I have created a volume for the `/ftp` directory within the Docker container. So all the downloaded files gonna be there. You have to create ftp server for that directory. I am using `vsftpd` to setup the ftp server in my linux machine. You can find all the steps in this blog post https://www.geeksforgeeks.org/how-to-setup-and-configure-an-ftp-server-in-linux-2 . Explore google if you have different operating system.
 
 ## Screenshots
 
