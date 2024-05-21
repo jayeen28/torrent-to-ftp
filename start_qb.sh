@@ -10,6 +10,7 @@ docker run \
   --name qbittorrent-nox \
   --read-only \
   --stop-timeout 1800 \
+  --restart unless-stopped
   --tmpfs /tmp \
   -e QBT_EULA \
   -e QBT_WEBUI_PORT \
