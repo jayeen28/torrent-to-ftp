@@ -14,7 +14,7 @@ docker run \
   --tmpfs /tmp \
   -e QBT_EULA \
   -e QBT_WEBUI_PORT \
-  -p "$QBT_WEBUI_PORT":"$QBT_WEBUI_PORT"/tcp \
+  -p "127.0.0.1:$QBT_WEBUI_PORT":"$QBT_WEBUI_PORT"/tcp \
   -p 6881:6881/tcp \
   -p 6881:6881/udp \
   -v "$QBT_CONFIG_PATH":/config \
