@@ -11,7 +11,7 @@ This project provides an automated setup for running a qBittorrent client within
 # Setting up ftp server
 I have created a volume for the `/ftp` directory within the Docker container. So all the downloaded files gonna be there. You have to create ftp server for that directory. I am using `vsftpd` to setup the ftp server in my linux machine. You can find all the steps in this blog post https://www.geeksforgeeks.org/how-to-setup-and-configure-an-ftp-server-in-linux-2 . Explore google if you have different operating system.
 
-## Screenshots
+<!-- ## Screenshots
 
 1. **The `/start` command**:
    ![The `/start` command](https://raw.githubusercontent.com/jayeen28/torrent-to-ftp/main/screen_shots/Screenshot%20from%202024-05-21%2016-49-42.png)
@@ -20,4 +20,4 @@ I have created a volume for the `/ftp` directory within the Docker container. So
    ![The `/add magnetLink` command](https://raw.githubusercontent.com/jayeen28/torrent-to-ftp/main/screen_shots/Screenshot%20from%202024-05-21%2016-50-49.png)
 
 1. **The `/seAll` command**:
-   ![The `/seeAll` command](https://raw.githubusercontent.com/jayeen28/torrent-to-ftp/main/screen_shots/Screenshot%20from%202024-05-21%2016-51-13.png)
+   ![The `/seeAll` command](https://raw.githubusercontent.com/jayeen28/torrent-to-ftp/main/screen_shots/Screenshot%20from%202024-05-21%2016-51-13.png) -->
