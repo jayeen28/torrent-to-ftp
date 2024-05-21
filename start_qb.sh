@@ -4,7 +4,7 @@ export \
   QBT_VERSION="4.4.5-1" \
   QBT_WEBUI_PORT=8080 \
   QBT_CONFIG_PATH="$(pwd)/config" \
-  QBT_DOWNLOADS_PATH="$(pwd)/downloads"
+  QBT_DOWNLOADS_PATH="/ftp"
 docker run \
   -t \
   --name qbittorrent-nox \
