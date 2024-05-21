@@ -1,3 +1,4 @@
+# REFERENCE: https://github.com/qbittorrent/docker-qbittorrent-nox
 export \
   QBT_EULA="accept" \
   QBT_VERSION="4.4.5-1" \
