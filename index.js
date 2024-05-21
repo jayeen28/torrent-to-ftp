@@ -33,6 +33,7 @@ const listeners = [
 async function main() {
     await qb_api.authenticate();
     const bot = new TelegramBot(BOT_TOKEN, { polling: true, });
+    console.log('Telegram bot started');
     listeners.forEach(({ command, callback }) => bot.onText(command, (msg) => {
         return checkUsers(msg, bot, () => callback({ msg, qb_api, bot }))
     }));
