@@ -5,8 +5,8 @@ services:
     image: qbittorrentofficial/qbittorrent-nox:4.4.5-1
     container_name: qbittorrent-nox
     ports:
-      - 6881:6881
-      - 8080:8080
+      - 127.0.0.1:6881:6881
+      - 127.0.0.1:8080:8080
     environment:
       - QBT_EULA="accept"
       - QBT_WEBUI_PORT=8080
@@ -19,7 +19,7 @@ services:
     image: delfer/alpine-ftp-server
     container_name: torrent-fto-server
     ports:
-      - 21:21
+      - 127.0.0.1:21:21
       - 127.0.0.1:21000-21010:21000-21010
     environment:
       - USERS=${FTP_USERS}
