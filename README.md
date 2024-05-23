@@ -5,11 +5,8 @@ This project provides an automated setup for running a qBittorrent client within
 1. First clone this repo.
 1. Setup `.env` variables. Checkout `.env.example` for reference.
 1. Install docker if you don't have already installed.
-1. Then run `chmod +x ./start_qb.sh` and `./start_qb.sh`. If successful, it will print a container id.
+1. Then run `docker compose up -d`. Your machine should have 21 and 21000-21010 ports available because it is a passive ftp connection. If not then configure that in the docker compose file.
 1. Run `yarn start` or `node index.js` to start the telegram bot. Use `pm2` if you want to run it in the background.
-
-# Setting up ftp server
-I have created a volume for the `/ftp` directory within the Docker container. So all the downloaded files gonna be there. You have to create ftp server for that directory. I am using `vsftpd` to setup the ftp server in my linux machine. You can find all the steps in this blog post https://www.geeksforgeeks.org/how-to-setup-and-configure-an-ftp-server-in-linux-2 . Explore google if you have different operating system.
 
 ## Screenshots
 
