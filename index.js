@@ -26,6 +26,14 @@ const listeners = [
         callback: see_torrents
     },
     {
+        command: /\/reauth/,
+        callback: ({ msg, qb_api, bot }) => {
+            const res = qb_api.authenticate();
+            if (res) return bot.sendMessage(msg.chat.id, 're auth success');
+            else return bot.sendMessage(msg.chat.id, 're auth failed');
+        }
+    },
+    {
         command: /\/help/,
         callback: help
     }

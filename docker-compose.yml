@@ -18,6 +18,7 @@ services:
   ftp:
     image: delfer/alpine-ftp-server
     container_name: torrent-fto-server
+    restart: always
     ports:
       - 127.0.0.1:21:21
       - 127.0.0.1:21000-21010:21000-21010
