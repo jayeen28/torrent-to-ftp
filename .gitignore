@@ -1,7 +1,5 @@
 .env
 downloads
-plex_config
-plex_temp
 config
 node_modules
 yarn.lock
