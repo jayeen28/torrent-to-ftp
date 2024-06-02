@@ -28,3 +28,23 @@ services:
       - MAX_PORT=21010
     volumes:
       - ./downloads:/ftp
+
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker
+    restart: unless-stopped
+    ports:
+      - 8000:32400
+    hostname: plex
+    network_mode: host
+    environment:
+      - TZ=Asia/Dhaka
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - VERSION=docker
+      - ALLOWED_NETWORKS=192.168.0.0/24
+    volumes:
+      - ./plex_config:/config
+      - ./plex_temp:/transcode
+      - ./downloads:/data
